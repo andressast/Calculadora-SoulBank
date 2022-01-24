@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylecalculadora.css">
+  <script src="scriptcalculadora.js"></script>
+  <title>Calculadora SoulBank</title>
+</head>
+
+<body>
+</body>
+<h1 id="titlecalculator">Selecione o tipo de calculadora:</h1>
+
+<div id="buttonselectopition">
+  <button class="selectopition" onclick="simpleCalculator()">Simples</button>
+  <button class="selectopition" onclick="scientificCalculator()">Científica</button>
+</div>
+
+<div id="container">
+
+  <div id="calculator">
+    <div id="result">
+      <div id="screen"></div>
+    </div>
+
+    <div id="keyboard">
+      <button class="operator" onclick="clearCalc()">C</button>
+      <button class="operator" onclick="cancelEntry()">CE</button>
+      <button id="buttonScientific1" class="operator" onclick="resultsquareroot()" disabled>&radic;</button>
+      <button class="operator" onclick="operation('division')">&divide;</button>
+      <button class="number" onclick="insertNumber(7)">7</button>
+      <button class="number" onclick="insertNumber(8)">8</button>
+      <button class="number" onclick="insertNumber(9)">9</button>
+      <button class="operator" onclick="operation('multiplication')">&times;</button>
+      <button class="number" onclick="insertNumber(4)">4</button>
+      <button class="number" onclick="insertNumber(5)">5</button>
+      <button class="number" onclick="insertNumber(6)">6</button>
+      <button class="operator" onclick="operation('subtraction')">-</button>
+      <button class="number" onclick="insertNumber(1)">1</button>
+      <button class="number" onclick="insertNumber(2)">2</button>
+      <button class="number" onclick="insertNumber(3)">3</button>
+      <button class="operator" onclick="operation('sum')">+</button>
+      <button id="buttonScientific2" class="operator" onclick="resultpi()" disabled>&pi;</button>
+      <button class="number" onclick="insertNumber(0)">0</button>
+      <button id="buttonScientific3" class="operator" onclick="resultsquared()" disabled>x&sup2;</button>
+      <button id="buttonScientific4" class="operator" onclick="resultcubed()" disabled>x&sup3;</button>
+      <button id="operatorResult" class="operator" onclick="result()">=</button>
+
+    </div>
+  </div>
+</div>
+<footer>
+</footer>
+
+</html>
